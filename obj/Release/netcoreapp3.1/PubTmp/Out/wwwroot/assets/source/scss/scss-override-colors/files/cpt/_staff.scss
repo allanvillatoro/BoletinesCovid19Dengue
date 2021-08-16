@@ -1,0 +1,25 @@
+/*
+ * Shortcode: staff.scss
+ * -----------------------------------------------
+*/
+
+.staff-current-theme {
+	position: relative;
+	&::before {
+		background-color: $theme-color1;
+	}
+	img {
+	}
+	.staff-details {
+		.staff-title {
+		}
+		.staff-designation {
+		}
+	}
+	&:hover {
+		.staff-details {
+		}
+		&::before {
+		}
+	}
+}

@@ -1,0 +1,68 @@
+﻿@model BoletinesCovid19Dengue.Models.Login
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+@if (TempData.ContainsKey("mensaje2"))
+{
+    <div class="alert alert-danger alert-dismissible fade show text-center" role="alert">
+        @TempData["mensaje2"].ToString()
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+
+
+
+<!-- main -->
+<div class="main-agileits">
+    <h1 class="title" style="color:white">Panel de Control</h1>
+    <div class="mainw3-agileinfo form">
+        <div id="login">
+            <form action="#" method="post">
+                <div class="field-wrap">
+                    <label> Nombre de Usuario<span class="req">*</span> </label>
+                    <input type="text" asp-for="usuario" required autocomplete="off" />
+                    <span asp-validation-for="usuario" class="text-danger"></span>
+                </div>
+
+
+                <div class="field-wrap">
+                    <label> Your Password<span class="req">*</span> </label>
+                    <input type="password" asp-for="password" required autocomplete="off" />
+                    <span asp-validation-for="password" class="text-danger"></span>
+                </div>
+
+                @if (TempData.ContainsKey("mensaje"))
+                {
+                    <div class="alert alert-danger alert-dismissible fade show text-center" role="alert">
+                        @TempData["mensaje"].ToString()
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                }
+
+
+
+                <button class="button button-block btn-secondary">Login</button>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-2"></div>
+        <div class="col-4">
+
+            <a asp-area="Inicio" asp-controller="Home" asp-action="Index" class="btn btn-theme-colored1 btn-round" target="_blank">Salir</a>
+        </div>
+    </div>
+</div>

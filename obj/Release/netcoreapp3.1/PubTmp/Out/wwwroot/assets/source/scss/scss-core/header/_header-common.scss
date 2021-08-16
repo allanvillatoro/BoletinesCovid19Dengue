@@ -1,0 +1,16 @@
+/*
+ * header-other.scss
+ * -----------------------------------------------
+*/
+header#header {
+	.header-top,
+	.header-middle,
+	.header-nav {
+		.container-fluid {
+			padding: 0 100px;
+			@include media-breakpoint-down(lg) {
+				padding: 0 20px;
+			}
+		}
+	}
+}

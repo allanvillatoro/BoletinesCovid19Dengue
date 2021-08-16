@@ -1,0 +1,69 @@
+/*
+ * Shortcode: common.scss
+ * -----------------------------------------------
+*/
+
+.mb-responsive--440 {
+	margin-bottom: -440px;
+	@include media-breakpoint-down(sm) {
+		margin-bottom: 0;
+	}
+}
+.about-list {
+	list-style-position: inherit;
+	margin-left: 65px;
+}
+.about-list li {
+	margin-bottom: 15px;
+	position: relative;
+	list-style: none;
+}
+.about-list li::after {
+	position: absolute;
+	left: -65px;
+	top: 5px;
+	content: "\f00c";
+	font-family: FontAwesome;
+	text-align: center;
+	font-size: 16px;
+	height: 42px;
+	width: 42px;
+	border-radius: 50%;
+	line-height: 42px;
+	border: 1px solid;
+}
+.about-list li:hover::after {
+	color: #fff;
+}
+.spread-box {
+	text-align: center;
+	border: 1px solid #eee;
+}
+.spread-box:hover {
+	background: #F0F8FF;
+}
+.spread-box img {
+	transition: 600ms;
+}
+.spread-box:hover img {
+	transform: rotateY(180deg);
+}
+.spread-thumb {
+	padding: 20px;
+}
+.spread-details .title {
+	margin-bottom: 0;
+	padding: 10px 0;
+	margin-top: 0;
+	color: #fff;
+}
+.cta-area {
+	background-image: url('../../../images/bg/worldmap.png');
+	border-radius: 15px;
+	background-color: #103b49;
+}
+.prevention {
+	background: #103b49;
+	padding: 20px;
+	transition: 300ms;
+}

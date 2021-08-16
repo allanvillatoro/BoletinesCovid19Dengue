@@ -1,0 +1,40 @@
+/*
+ * Shortcode: common.scss
+ * -----------------------------------------------
+*/
+
+.widget {
+	&.widget_archive,
+	&.widget_categories,
+	&.widget_pages,
+	&.widget_meta,
+	&.widget_recent_comments,
+	&.widget_rss,
+	&.widget_nav_menu {
+		ul {
+			>li {
+				&::before {
+					color: $theme-color3;
+				}
+			}
+		}
+	}
+}
+.prevention:hover {
+	background: $theme-color1;
+}
+.about-list li::after {
+	color: $theme-color1;
+	border-color: $theme-color1;
+}
+.about-list li:hover::after {
+	background: $theme-color1;
+}
+.spread-details {
+	background: $theme-color1;
+}
+.menuzord.red .menuzord-menu > li.active > a,
+.menuzord.red .menuzord-menu > li:hover > a,
+.menuzord.red .menuzord-menu ul.dropdown li:hover > a {
+    background: $theme-color1;
+}

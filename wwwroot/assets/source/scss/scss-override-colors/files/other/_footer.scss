@@ -1,0 +1,35 @@
+/*
+ * Shortcode: footer.scss
+ * -----------------------------------------------
+*/
+footer#footer {
+	a:not(.social-link) {
+		&:focus,
+		&:hover,
+		&:active {
+		}
+	}
+	.footer-widget-area {
+		> .container,
+		> .container-fluid {
+		}
+		.footer-widget-area-column-separator {
+			&:first-child {
+			}
+		}
+		.widget {
+			.widget-title {
+				&.widget-title-line-bottom {
+					&:after,
+					&:before {
+						background: $theme-color1;
+					}
+
+					&:before {
+						background: #153647;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,26 @@
+/*
+ * flickr-feed.scss
+ * -----------------------------------------------
+*/
+#flickr-feed img {
+	background-color: #000;
+	float: left;
+	height: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#flickr-feed {
+	.flickr_badge_image {
+		a {
+			img {
+				margin: 0px 5px 5px 0;
+				width: 70px;
+				height: 60px;
+				float: left;
+				background: 0 0;
+				padding: 0;
+			}
+		}
+	}
+}

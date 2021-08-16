@@ -1,0 +1,96 @@
+﻿@model IEnumerable<BoletinesCovid19Dengue.Models.Bulletin>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Listado de Boletines</h1>
+
+<p>
+    @*<a asp-action="Create">Agregar Boletin</a>*@
+    <a class="btn btn-secondary" asp-action="Create">Agregar Boletin</a>
+</p>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.titulo)
+            </th>
+            @*<th>
+                    @Html.DisplayNameFor(model => model.descripcion)
+                </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.fecha_publicacion)
+            </th>
+            @*<th>
+                    @Html.DisplayNameFor(model => model.imagen)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.archivo_pdf)
+                </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.habilitado)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.titulo)
+                </td>
+                @*<td>
+                        <p class="text-justify">
+                            @Html.DisplayFor(modelItem => item.descripcion)
+                        </p>
+                    </td>*@
+                <td>
+                    @Html.DisplayFor(modelItem => item.fecha_publicacion)
+                </td>
+                @*<td>
+                        @Html.DisplayFor(modelItem => item.imagen)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.archivo_pdf)
+                    </td>*@
+                <td>
+                    @Html.DisplayFor(modelItem => item.habilitado)
+                </td>
+                <td>
+                    @*<button type="button" class="btn-sm btn-outline-danger" >
+                            <p class="text-center text-black">
+                                &nbsp;&nbsp;@Html.ActionLink("Editar", "Edit", new { id = item.id })&nbsp;&nbsp;
+                            </p>
+                        </button>
+                        <button type="button" class="btn-sm btn-outline-danger">
+                            <p class="text-center text-black">
+                            @Html.ActionLink("Detalles", "Details", new { id = item.id })
+                            </p>
+                        </button>
+                        <button type="button" class="btn-sm btn-outline-danger">
+                            <p class="text-center text-black" >
+                                &nbsp;&nbsp;@Html.ActionLink("Borrar", "Delete", new { id = item.id })&nbsp;
+                            </p>
+                        </button>*@
+
+                    <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                        @Html.ActionLink("Editar", "Edit", new { id = item.id }, new { miAtributo = "valor2", @class = "btn btn-secondary text-center" })
+                        @Html.ActionLink("Detalles", "Details", new { id = item.id }, new { miAtributo = "valor1", @class = "btn btn-secondary text-center" })
+                        @Html.ActionLink("Borrar", "Delete", new { id = item.id }, new { miAtributo = "valor3", @class = "btn btn-secondary text-center" })
+                    </div>
+
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

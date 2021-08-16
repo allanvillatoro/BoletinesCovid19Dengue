@@ -1,0 +1,22 @@
+/*
+ * form.scss
+ * -----------------------------------------------
+*/
+.tm-cf7-subscription-form-round-btn {
+	.wpcf7-form-control.wpcf7-text {
+		height: 78px;
+		padding: 0 30px;
+		font-size: 14px;
+		background: #f4f6fb;
+		border: none;
+		border-bottom: 1px solid #fff;
+		opacity: 1;
+		border-radius: 5px;
+	}
+	.submit-btn {
+		position: absolute;
+		right: 7px;
+		top: 59%;
+		transform: translateY(-50%);
+	}
+}

@@ -1,0 +1,13 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "CeraRoundPro-Bold";
+  src: url("./fonts/TypeMatesCeraRoundProBold.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/TypeMatesCeraRoundProBold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/TypeMatesCeraRoundProBold.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/TypeMatesCeraRoundProBold.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/TypeMatesCeraRoundProBold.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/TypeMatesCeraRoundProBold.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/TypeMatesCeraRoundProBold.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}

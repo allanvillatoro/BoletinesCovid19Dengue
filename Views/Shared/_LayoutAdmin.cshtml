@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - BoletinesCovid19Dengue</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/js/site.js" />
+    @*<link rel="stylesheet" href="~/css/site.css" />*@
+    <link rel="stylesheet" href="~/css/style.css" media="all" />
+
+
+    <link rel="stylesheet" href="~/css/style-main.css" />
+    <link id="menuzord-menu-skins" href="~/assets/dist/js/menuzord/css/skins/menuzord-rounded-boxed.css" rel="stylesheet" />
+    <link href="~/css/color-test.css" rel="stylesheet" type="text/css">
+
+    <link href="~/images/favicon.png" rel="shortcut icon" type="image/png">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+</head>
+<body>
+
+
+
+    <header id="header" class="header header-layout-type-header-2rows">
+        <div class="header-top ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-auto header-top-left align-self-center text-center text-xl-left">
+                        @*<ul class="element contact-info">
+                                <li class="contact-phone"><i class="fa fa-phone font-icon sm-display-block"></i> Tel: +440-98-5298</li>
+                                <li class="contact-email"><i class="fa fa-envelope-o font-icon sm-display-block"></i> info@example.com</li>
+                                <li class="contact-address"><i class="fa fa-map-o font-icon sm-display-block"></i> 121 King Street, Melbourne</li>
+                            </ul>*@
+                    </div>
+                    <div class="col-xl-auto ml-xl-auto header-top-right align-self-center text-center text-xl-right">
+                        <div class="element">
+                            @*<ul class="header-top-nav list-inline">
+                                    <li class="menu-item"><a title="Home" class="menu-item-link" href="#"><strong>Home</strong></a></li>
+                                    <li class="menu-item"><a title="Home" class="menu-item-link" href="#"><strong>Historia</strong></a></li>
+                                    <li class="menu-item"><a title="Home" class="menu-item-link" href="#"><strong>Sitios de Interes</strong></a></li>
+                                </ul>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-nav">
+            <div class="header-nav-wrapper navbar-scrolltofixed green">
+                <div class="menuzord-container header-nav-container green ">
+                    <div class="container position-relative">
+                        <div class="row">
+                            <div class="col">
+                                <div class="row header-nav-col-row">
+                                    <div class="col-sm-auto align-self-center">
+                                        <a class="menuzord-brand site-brand" href="index-mp-layout1.html">
+                                            <img class="logo-default logo-1x" src="~/images/logo-wide.png" alt="Logo">
+                                            <img class="logo-default logo-2x retina" src="~/images/logo-wide@2x.png" alt="Logo">
+                                            <img class="logo-default logo-3x retina" src="~/images/logoUnitec.jpg" alt="Logo">
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+                                <div class="row d-block d-xl-none">
+                                    <div class="col-12">
+                                        <nav id="top-primary-nav-clone" class="menuzord d-block d-xl-none default menuzord-color-default menuzord-border-boxed menuzord-responsive" data-effect="slide" data-animation="none" data-align="right">
+                                            <ul id="main-nav-clone" class="menuzord-menu menuzord-right menuzord-indented scrollable">
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    @*<footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2020 - BoletinesCovid19Dengue - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>*@
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/jquery-2.2.3.min.js" asp-append-version="true"></script>
+    <script src="~/assets/dist/js/custom.js"></script>
+    <script src="~/assets/dist/js/extra-rev-slider.js"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

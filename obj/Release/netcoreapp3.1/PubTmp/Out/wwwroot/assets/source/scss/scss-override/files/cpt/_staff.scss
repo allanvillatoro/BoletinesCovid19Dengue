@@ -1,0 +1,59 @@
+/*
+ * Shortcode: staff.scss
+ * -----------------------------------------------
+*/
+
+.staff-current-theme {
+	position: relative;
+	&::before {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		content: '';
+		z-index: 1;
+		opacity: 0;
+		-webkit-transition: all .3s ease-out 0s;
+		transition: all .3s ease-out 0s;
+		visibility: hidden;
+		border-radius: 15px;
+	}
+	img {
+		width: 100%;
+	}
+	.staff-details {
+		text-align: center;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		opacity: 0;
+		-webkit-transition: all .3s ease-out 0s;
+		transition: all .3s ease-out 0s;
+		visibility: hidden;
+		width: 100%;
+		.staff-title {
+			color: #fff;
+		}
+		.staff-designation {
+			color: #fff;
+		}
+	}
+	&:hover {
+		.staff-details {
+			opacity: 1;
+			visibility: visible;
+		}
+		&::before {
+			left: 20px;
+			right: 20px;
+			top: 20px;
+			bottom: 20px;
+			opacity: .9;
+			visibility: visible;
+		}
+	}
+}
